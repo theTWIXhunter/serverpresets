@@ -19,6 +19,10 @@
             text-align: center;
             border-bottom: 2px solid #3e8e41;
         }
+        header h1 {
+            font-size: 2.5rem; /* Larger header */
+            color: #ffffff; /* White color */
+        }
         .container {
             width: 90%;
             max-width: 1200px;
@@ -32,7 +36,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         }
-        h1, h2 {
+        h2 {
             color: #4caf50;
             margin-bottom: 15px;
         }
@@ -42,6 +46,22 @@
         ol li {
             margin-bottom: 15px;
             font-size: 16px;
+        }
+        p.disclaimer {
+            font-size: 14px;
+            color: #ffcc00; /* Yellow for emphasis */
+            margin-top: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #4caf50;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
         }
         footer {
             text-align: center;
@@ -88,10 +108,12 @@
                     <strong>Start your server:</strong> After the files are unarchived, return to the control panel and start your server. Your preset should now be fully installed and ready to use!
                 </li>
                 <li>
-                    <strong>Test your server:</strong> Join your server using your Minecraft client to ensure everything is working as expected. If you encounter issues, check the console logs or reach out for support.
+                    <strong>Test your server:</strong> Join your server using your Minecraft client to ensure everything is working as expected. 
+                    <p class="disclaimer">* You might need some client modifications to join if specified on the preset download page.</p>
                 </li>
             </ol>
             <p>And that's it! You now have your Minecraft server set up with the preset of your choice. Enjoy building, surviving, and adventuring!</p>
+            <a href="javascript:history.back()" class="back-button">Go Back</a>
         </div>
     </div>
     <footer>
