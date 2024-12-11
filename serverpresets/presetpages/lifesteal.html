@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1d1d1d; /* Consistent with the dark theme */
+            background-color: #1d1d1d;
             color: #e0e0e0;
         }
         header {
@@ -26,19 +26,27 @@
             padding: 20px 0;
         }
         .section {
-            background-color: #121212; /* Consistent section background */
+            background-color: #121212;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            position: relative; /* Add relative positioning to section */
         }
         .preset-info {
             display: flex;
+            justify-content: start;
             align-items: center;
-            justify-content: space-between;
         }
         .preset-info h2 {
-            color: #ffffff; /* White for H2 */
+            color: #ffffff;
             margin: 0;
+            display: inline-block;
+        }
+        .preset-info .author-name {
+            font-size: 0.9rem;
+            color: #b0b0b0;
+            margin-left: 10px;
+            display: inline-block;
         }
         .buttons-container {
             display: flex;
@@ -50,9 +58,28 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin-left: 20px; /* Add some space between the name and button */
+            margin-left: 20px;
         }
         .buttons-container a:hover {
+            background-color: #45a049;
+        }
+        .download-button-container {
+            position: absolute;
+            right: 20px; /* Move the download button to the right */
+            top: 30px;  /* Vertically align it */
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .download-button-container a {
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+        }
+        .download-button-container a:hover {
             background-color: #45a049;
         }
         .details-list {
@@ -63,7 +90,7 @@
         .details-list li {
             margin: 10px 0;
             padding: 10px;
-            background-color: #1e271f; /* Matches preset card background */
+            background-color: #1e271f;
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         }
@@ -73,11 +100,6 @@
         }
         .details-list li a:hover {
             text-decoration: underline;
-        }
-        .author-name {
-            font-size: 0.9rem;
-            color: #b0b0b0;
-            margin-top: 5px;
         }
         footer {
             text-align: center;
@@ -93,6 +115,21 @@
             color: #fff;
             text-decoration: underline;
         }
+        .short-description {
+            color: #e0e0e0;
+        }
+        .long-description {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .long-description li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #1e271f;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -104,11 +141,18 @@
         <div class="section">
             <div class="preset-info">
                 <h2>LifeSteal Preset</h2>
-                <div class="buttons-container">
+                <p class="author-name">by theTWIXhunter</p>
+                <!-- Moved download button to right -->
+                <div class="download-button-container">
                     <a href="https://example.com" target="_blank">Download Preset</a>
                 </div>
             </div>
-            <p class="author-name">by theTWIXhunter</p>
+            <div class="short-description">
+                A competitive PvP server preset that focuses on life-stealing mechanics. Perfect for players who enjoy challenges and duels.
+            </div>
+            <div class="long-description">
+                <li>This preset adds a unique twist to the Minecraft experience by incorporating a life-steal mechanic into PvP combat. Players can steal health from others, adding an extra layer of strategy to fights. The preset also includes essential plugins for server security and player protection, ensuring smooth gameplay. It’s perfect for anyone looking to spice up their Minecraft survival or PvP server.</li>
+            </div>
             <ul class="details-list">
                 <li><strong>World included:</strong> No</li>
                 <li><strong>Software:</strong> Purpur 1.21.4</li>
