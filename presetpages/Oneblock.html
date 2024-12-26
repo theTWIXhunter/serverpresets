@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Presets - LifeSteal</title>
+
+<!--styles-->
+
+    <style>
+/* general page stuff */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1d1d1d;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #3e8e41;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px 0;
+        }
+        .section {
+            background-color: #121212;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            position: relative; /* Add relative positioning to section */
+        }
+/* preset-info */
+        .preset-info {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .preset-info h2 {
+            color: #ffffff;
+            margin: 0;
+            display: inline-block;
+        }
+        .preset-info .author-name {
+            font-size: 0.9rem;
+            color: #b0b0b0;
+            margin-left: 10px;
+            display: inline-block;
+        }
+/* buttons-container */
+        .buttons-container {
+            display: flex;
+            align-items: center;
+        }
+        .buttons-container a {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .buttons-container a:hover {
+            background-color: #45a049;
+        }
+/* download-button-container */
+        .download-button-container {
+            position: absolute;
+            right: 20px; /* Move the download button to the right */
+            top: 30px;  /* Vertically align it */
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .download-button-container a {
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+        }
+        .download-button-container a:hover {
+            background-color: #45a049;
+        }
+/* details list */
+        .details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .details-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #1e271f;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        .details-list li a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+        .details-list li a:hover {
+            text-decoration: underline;
+        }
+/* footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4caf50;
+            color: #fff;
+            border-top: 2px solid #3e8e41;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+/* descriptions (IDK why it's here, I added it later.) */
+        .short-description {
+            color: #e0e0e0;
+        }
+        .long-description {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .long-description li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #1e271f;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+<!-- header -->
+    <header>
+        <h1>Minecraft Server Presets</h1>
+        <p>All the details you need about this preset!</p>
+    </header>
+<!-- big black !BL!ock -->
+    <div class="container">
+        <div class="section">
+
+            <!-- Name and info part -->
+
+            <div class="preset-info">
+                <h2>Oneblock Preset</h2>
+                <p class="author-name">by theTWIXhunter</p>
+                <!-- The dammed Download button -->
+                <div class="download-button-container">
+                    <a href="https://example.com" target="_blank">Download Preset</a>
+                </div>
+            </div>
+            <!-- descriptions -->
+            <div class="short-description">
+                Start on a single block and progressively unlock resources and challenges as you break and expand their world.
+            </div>
+
+            <div class="long-description">
+                <li>Includes a spawn island that serves as the central hub for all players in the game. Surrounding this spawn island are multiple unique islands, with each one designated for an individual player. This setup fosters a sense of personalized space while encouraging interaction among players. To access their designated island, players can simply use the command /island, which seamlessly teleports them to their own private area. Each island is crafted with distinct features and resources, allowing players to gather materials, build structures, and complete challenges in solitude or in collaboration with others.</li>
+            </div>
+
+            <!-- Details list -->
+
+            <ul class="details-list">
+                <li><strong>World included:</strong> Yes</li>
+                <li><strong>Software:</strong> Purpur 1.21.4</li>
+                <li><strong>Client mods needed:</strong> No</li>
+                <li><strong>Config included:</strong> Yes</li>
+                <li>
+                    <strong>Plugins:</strong>
+                    <ul>
+                        <li>
+                            <a href="https://modrinth.com/plugin/oneblock_bukkit" target="_blank">OneBlock by MrMarL</a>
+                        </li>
+                        <li>
+                            <a href="https://modrinth.com/plugins/coreprotect" target="_blank">CoreProtect by core-team</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+    <!-- end of the detail  -->
+
+    <!-- back/help button -->
+            <div class="buttons-container">
+                <a href="javascript:history.back()" class="back-button">Go Back</a>
+                <a href="/serverpresets/howtoinstal.html">How to Install</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of the big black !BL!ock --> 
+
+    <footer>
+        <!-- 🦶🤤 -->
+        <p>© 2024 Minecraft Server Presets. All rights reserved.</p>
+        <p>Do you have ideas or your own presets? Contact me on Discord: 
+            <a href="https://discord.com/users/1244004992046596232" target="_blank">@the_twix_hunter</a>
+        </p>
+    </footer>
+</body>
+</html>
